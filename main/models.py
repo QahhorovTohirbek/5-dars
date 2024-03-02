@@ -1,6 +1,10 @@
 from django.db import models
 
 
+class Introduce(models.Model):
+    name = models.CharField(max_length=255)
+    major = models.CharField(max_length=250)
+
 class AboutMe(models.Model):
     title = models.TextField()
     body = models.TextField()
